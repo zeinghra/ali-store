@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+        - primary meta tags
+    -->
+    <meta name="title" content="Ali Store">
+    <meta name="description" content="This is a headphone web store made by zeinghra">
+
+    <!-- 
+        - favicon
+    -->
+    <link rel="shortcut icon" href="./imgs/favicon_io/android-chrome-192x192.png" type="image/x-icon">
+
+    <!-- 
+        - custom css link
+    -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 
+        - google fonts link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- 
+        - font awesome icons link
+    -->
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+
+
+
+    <title>🐊 Welcome to Ali Webstore 🐊</title>
+</head>
+
+<body>
+
+
+    <!-- 
+        # HEADER
+    -->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="./imgs/icons/Apple Watch.svg" alt="Ali-store">
+
+                <span class="logo-text">Ali store</span>
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <ul class="navbar-ul">
+
+                    <li>
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link">Brands</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link">Recent Products</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+
+                </ul>
+
+                <div class="navbar-wrapper">
+
+                    <a href="#" class="nav-link">
+                        <img src="./imgs/icons/Search.svg" alt="search">
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <img src="./imgs/icons/Person.svg" alt="search">
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <img src="./imgs/icons/Shopping Cart.svg" alt="search">
+                    </a>
+
+                </div>
+
+            </nav>
+
+            <button class="nav-toggle-btn icon-btn" data-nav-toggler>
+                <i class="fa fa-bars open" aria-hidden="true"></i>
+
+                <i class="fa fa-times close" aria-hidden="true"></i>
+            </button>
+
+        </div>
+    </header>
+
+    <!-- 
+        # MAIN
+    -->
+
+    <main>
+        <article>
+
+            <!-- 
+                # HERO
+            -->
+
+            <section class="section hero">
+                <div class="container">
+
+                    <img src="./imgs/hero-watch.png" alt="" class="hero-banner">
+
+                    <div class="hero-content">
+
+                        <div class="hero-text">
+
+                            <h1 class="headline-large">Discover Most Suitable Watches</h1>
+                            <p class="secondary-text">
+                                Find the best, reliable, and cheap smart watches here. We focus on
+                                product quality. Here you can find smart watches of
+                                almost all brands. So why you are waiting? Just order now!
+                            </p>
+
+                        </div>
+
+                        <form class="hero-form" data-hero-form>
+
+                            <label class="search-bar">
+
+                                <span class="search-icon">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </span>
+
+                                <input type="text" name="search" class="search-input" id="search"
+                                    placeholder="Find the best brands">
+
+                            </label>
+
+                            <button class="search-btn" type="submit">Search</button>
+
+                        </form>
+
+
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 
+                # CATEGORY
+            -->
+
+            <section class="section category">
+                <div class="container">
+
+                    <div class="category-card">
+
+                        <img src="./imgs/category-apple.png" alt="" class="card-img">
+
+                        <div class="card-content">
+
+                            <h3 class="headline-medium">
+                                Apple
+                            </h3>
+
+                            <p class="secondary-text">
+                                Apple is one of the most famous smart watches providing company.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="category-card">
+
+                        <img src="./imgs/category-xiaomi.png" alt="" class="card-img">
+
+                        <div class="card-content">
+
+                            <h3 class="headline-medium">
+                                Xiaomi
+                            </h3>
+
+                            <p class="secondary-text">
+                                Xiaomi smart watches are produced by MI company.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="category-card">
+
+                        <img src="./imgs/category-fitbit.png" alt="" class="card-img">
+
+                        <div class="card-content">
+
+                            <h3 class="headline-medium">
+                                FitBit
+                            </h3>
+
+                            <p class="secondary-text">
+                                FitBit smart watches are best for there health and fitness features.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </section>
+
+
+
+            <!-- 
+                # PRODUCTS
+            -->
+
+            <section class="section products">
+                <div class="container">
+
+                    <div class="section-header">
+                        <p class="label-small accent">
+                            Find your favorite smart watch.
+                        </p>
+                        <h2 class="headline-medium">
+                            Our Latest Products
+                        </h2>
+                    </div>
+
+                    <div class="products-holder">
+
+                        <div class="product-card">
+
+                            <img src="./imgs/product/product-apple-smart-1.png" alt="apple smart 1" class="card-banner">
+
+                            <div class="card-content">
+
+                                <h4 class="label-medium">
+                                    Apple Smart I
+                                </h4>
+
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+
+                                <span class="price">
+                                    <s>$300.00</s>
+                                    $255.00
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <img src="./imgs/product/product-apple-smart-2.png" alt="apple smart 1" class="card-banner">
+
+                            <div class="card-content">
+
+                                <h4 class="label-medium">
+                                    Apple Smart II
+                                </h4>
+
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+
+                                <span class="price">
+                                    <s>$300.00</s>
+                                    $255.00
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <img src="./imgs/product/product-apple-smart-3.png" alt="apple smart 1" class="card-banner">
+
+                            <div class="card-content">
+
+                                <h4 class="label-medium">
+                                    Apple Smart III
+                                </h4>
+
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+
+                                <span class="price">
+                                    <s>$300.00</s>
+                                    $255.00
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <img src="./imgs/product/product-apple-smart-4.png" alt="apple smart 1" class="card-banner">
+
+                            <div class="card-content">
+
+                                <h4 class="label-medium">
+                                    Apple Smart IV
+                                </h4>
+
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+
+                                <span class="price">
+                                    <s>$300.00</s>
+                                    $255.00
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <img src="./imgs/product/product-samsung-watch-pro.png" alt="apple smart 1"
+                                class="card-banner">
+
+                            <div class="card-content">
+
+                                <h4 class="label-medium">
+                                    Samsung Watch Pro
+                                </h4>
+
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+
+                                <span class="price">
+                                    <s>$300.00</s>
+                                    $255.00
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-card">
+
+                            <img src="./imgs/product/product-fitbit-max-1.png" alt="apple smart 1" class="card-banner">
+
+                            <div class="card-content">
+
+                                <h4 class="label-medium">
+                                    Fitbit Max 1
+                                </h4>
+
+                                <div class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+
+                                <span class="price">
+                                    $155.00
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="btn btn-fill label-small">
+                        View More
+                    </button>
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
