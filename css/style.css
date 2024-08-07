@@ -5,7 +5,7 @@
 :root {
 
   --default-font-family: 'Roboto', sans-serif;
-  --header-font-family: 'Oswald' sans-serif;
+  --header-font-family: 'Oswald', sans-serif;
 
   --clr-primary: black;
   --clr-secondary-100: rgb(255, 255, 255);
@@ -181,14 +181,15 @@ body {
 
 
 .container {
-  padding-inline: 16px;
-  max-width: 580px;
   width: 100%;
+  max-width: 580px;
+  padding-inline: 16px;
   margin-inline: auto;
 }
 
 .section {
   background-color: var(--clr-secondary-100);
+  margin-block-start: -1px;
 }
 
 .section.hero {
@@ -197,7 +198,12 @@ body {
 
 .section-header {
   text-align: center;
-  margin: auto;
+  margin-inline: auto;
+  margin-block-end: 1rem;
+}
+
+.section-header h2 {
+  margin-top: 1rem;
 }
 
 .img-cover {
@@ -248,6 +254,10 @@ body {
   gap: .25rem;
 }
 
+.rating .material-symbols-rounded {
+  font-variation-settings: 'FILL' 1;
+}
+
 
 
 .btn {
@@ -288,7 +298,7 @@ body {
   background-color: rgb(32, 32, 32);
   border-bottom: 1px solid var(--clr-secondary-100);
   box-shadow: 0px 10px 12px #ffffff11;
-  border-radius: .5rem;
+  border-radius: 0 0 .5rem .5rem;
   animation: slide_in 300ms ease-in;
 }
 
@@ -523,10 +533,6 @@ body {
 |        #PRODUCTS        |
 \*************************/
 
-.section.products {
-  margin-block-start: -1px;
-}
-
 
 .section.products .container {
   padding-block: 16px;
@@ -540,4 +546,8 @@ body {
 
 .products .btn {
   margin-block-start: 2rem;
+}
+
+.testimonials {
+  padding-block-start: 3rem;
 }
