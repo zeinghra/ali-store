@@ -494,6 +494,11 @@ body {
   outline: none;
   appearance: unset;
   border: none;
+  caret-color: var(--clr-secondary-50);
+  color: black;
+}
+
+.hero-form .search-input {
   caret-color: var(--clr-secondary-100);
   color: var(--clr-secondary-100);
 }
@@ -658,6 +663,8 @@ body {
   align-items: stretch;
   gap: 1rem;
 }
+
+
 
 /*************************\
 |         #FOOTER         |
