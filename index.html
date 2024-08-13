@@ -22,6 +22,11 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- 
+        - swiper css link
+    -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
+    <!-- 
         - google fonts link
     -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -147,7 +152,7 @@
 
                         </div>
 
-                        <form class="hero-form" data-hero-form>
+                        <form class="hero-form form" data-hero-form>
 
                             <label class="search-bar">
 
@@ -163,8 +168,6 @@
                             <button class="search-btn" type="submit">Search</button>
 
                         </form>
-
-
 
                     </div>
 
@@ -444,10 +447,97 @@
                         </h2>
                     </div>
 
-                    <div class="testimonial">
-                        <img src="" alt="" class="card-banner">
+                    <div class="mySwiper">
+                        <div class="testimonials-wrapper swiper-wrapper">
+
+                            <div class="testimonial swiper-slide">
+                                <img src="./imgs/avatar-1.png" alt="" class="avatar img-cover">
+                                <div class="card-content">
+                                    <h3 class="headline-medium">Hamza Faizi</h3>
+                                    <p class="secondary-text">
+                                        Don’t waste time, just order! This is the best website to puschase smart
+                                        watches.
+                                    </p>
+                                    <div class="rating">
+                                        <span class="material-symbols-rounded">star</span>
+                                        <span class="material-symbols-rounded">star</span>
+                                        <span class="material-symbols-rounded">star</span>
+                                        <span class="material-symbols-rounded">star</span>
+                                        <span class="material-symbols-rounded">star</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="testimonial swiper-slide">
+                                <img src="./imgs/avatar-2.png" alt="" class="avatar img-cover">
+                                <div class="card-content">
+                                    <h3 class="headline-medium">Hafiz Huzaifa</h3>
+                                    <p class="secondary-text">
+                                        I’ve been purchasing smart watches of Mohid for a long time. All the
+                                        products
+                                        are
+                                        good quality.
+                                    </p>
+                                    <div class="rating">
+                                        <span class="material-symbols-rounded">star</span>
+                                        <span class="material-symbols-rounded">star</span>
+                                        <span class="material-symbols-rounded">star</span>
+                                        <span class="material-symbols-rounded">star</span>
+                                        <span class="material-symbols-rounded">star</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
 
+
+                </div>
+            </section>
+
+
+
+            <!-- 
+                #   NEWSLETTER
+            -->
+
+            <section class="section newsletter">
+                <div class="container">
+
+                    <img src="./imgs/product/product-apple-smart-1.png" alt="Apple smart 1"
+                        class="section-banner img-cover">
+
+                    <div class="section-content">
+
+                        <h2 class="headline-medium">
+                            Subscribe To Newsletter
+                        </h2>
+
+                        <p class="secondary-text">
+                            Get free guide about smart watches daily.
+                        </p>
+
+                        <form class="form" data-newsletter-form>
+
+                            <label class="search-bar">
+
+                                <input type="email" name="newsletterEmail" class="search-input" id="email"
+                                    placeholder="Enter Email Address">
+
+                            </label>
+
+                            <button class="search-btn" type="submit">Subscribe</button>
+
+                        </form>
+
+                    </div>
 
                 </div>
             </section>
@@ -456,8 +546,49 @@
         </article>
     </main>
 
+    <footer class="footer">
+        <p class="copyright">Copyright @ 2024 | Ali-store</p>
+    </footer>
 
+    <!-- 
+        - swiper js
+    -->
+    <script src="./swiper-bundle.min.js"></script>
+
+    <script>
+        /*
+        * Swiper initialization
+        */
+
+        var swiper = new Swiper('.mySwiper', {
+            slidesPerView: 1,
+            loop: true,
+            centeredSlides: true,
+            spaceBetween: 40,
+            grabCursor: true,
+            watchSlidesProgress: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: 'true'
+            }
+        });
+    </script>
+
+    <!-- 
+        - main js
+    -->
     <script src="./index.js"></script>
+
+
+
+
 </body>
 
 </html>

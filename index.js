@@ -13,7 +13,7 @@ function openMenu() {
   // add event listener to the html element on a time out so the function isn't fired immediately
   setTimeout(() => {
     htmlEl.addEventListener('click', closeMenuOnBodyClick);
-  }, 500);
+  }, 50);
 }
 
 function closeMenuOnBodyClick(event) {

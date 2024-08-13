@@ -9,6 +9,7 @@
 
   --clr-primary: black;
   --clr-secondary-100: rgb(255, 255, 255);
+  --clr-secondary-75: #F6F6F6;
   --clr-secondary-50: #8B8E99;
   --clr-accent: #3858D6;
 
@@ -182,7 +183,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 580px;
+  max-width: 400px;
   padding-inline: 16px;
   margin-inline: auto;
 }
@@ -290,7 +291,7 @@ body {
   height: 70px;
   position: fixed;
   top: 0;
-  z-index: 4;
+  z-index: 1000;
 }
 
 .header.active {
@@ -447,14 +448,18 @@ body {
  */
 
 
-.hero-form {
+.form {
   display: flex;
   flex-direction: column;
   gap: 8px;
   border-radius: 8px;
   overflow: hidden;
-  background-color: rgb(32, 32, 32);
+  background-color: var(--clr-secondary-100);
   padding: 8px;
+}
+
+.form.hero-form {
+  background-color: rgb(32, 32, 32);
 }
 
 .search-btn {
@@ -475,8 +480,12 @@ body {
   justify-content: flex-start;
   gap: 1rem;
   padding: 8px 12px;
-  background-color: rgb(40, 40, 40);
+  background-color: transparent;
   border-radius: 8px;
+}
+
+.hero-form .search-bar {
+  background-color: rgb(40, 40, 40);
 }
 
 .search-input {
@@ -548,6 +557,117 @@ body {
   margin-block-start: 2rem;
 }
 
+
+
+
+
+/*************************\
+|      #TESTIMONIALS      |
+\*************************/
+
+.mySwiper {
+  margin-inline: auto;
+  max-width: 275px;
+  position: relative;
+  width: 100%;
+}
+
+.swiper-pagination {
+  bottom: -32px !important;
+}
+
+
+@media (min-width: 425px) {
+  .mySwiper .swiper-button-next {
+    right: -72px;
+    background-color: #0000000f;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+
+  .mySwiper .swiper-button-prev {
+    left: -72px;
+    background-color: #0000000f;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+
+}
+
+
+
 .testimonials {
+  padding-block: 3rem;
+}
+
+
+.testimonial.swiper-slide {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+
+  padding-block: 1rem;
+  background-color: var(--clr-secondary-75);
+  border-radius: 1rem;
+
+  overflow: hidden;
+  margin: auto;
+}
+
+.testimonial .card-content {
+  padding: 1rem;
+}
+
+.avatar {
+  flex-grow: 1;
+}
+
+
+/*************************\
+|       #NEWSLETTER       |
+\*************************/
+
+.newsletter {
   padding-block-start: 3rem;
+  padding-block-end: 3rem;
+}
+
+.newsletter .container {
+  background-color: var(--clr-secondary-75);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.newsletter .section-banner {
+  padding: 1rem;
+}
+
+.newsletter .section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+/*************************\
+|         #FOOTER         |
+\*************************/
+
+.footer {
+  padding: 1rem;
+}
+
+.footer .copyright {
+  color: white;
+  text-align: center;
 }
