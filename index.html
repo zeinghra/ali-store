@@ -63,7 +63,7 @@
             <a href="#" class="logo">
                 <img src="./imgs/icons/Apple Watch.svg" alt="Ali-store">
 
-                <span class="logo-text">Ali store</span>
+                <span class="logo-text label-small">Ali store</span>
             </a>
 
             <nav class="navbar" data-navbar>
@@ -71,23 +71,23 @@
                 <ul class="navbar-ul">
 
                     <li>
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="#" class="nav-link label-small">Home</a>
                     </li>
 
                     <li>
-                        <a href="#" class="nav-link">Brands</a>
+                        <a href="#" class="nav-link label-small">Brands</a>
                     </li>
 
                     <li>
-                        <a href="#" class="nav-link">Recent Products</a>
+                        <a href="#" class="nav-link label-small">Recent Products</a>
                     </li>
 
                     <li>
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#" class="nav-link label-small">Contact</a>
                     </li>
 
                     <li>
-                        <a href="#" class="nav-link">About</a>
+                        <a href="#" class="nav-link label-small">About</a>
                     </li>
 
                 </ul>
@@ -157,7 +157,9 @@
                             <label class="search-bar">
 
                                 <span class="search-icon">
-                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                    <span class="material-symbols-rounded">
+                                        search
+                                    </span>
                                 </span>
 
                                 <input type="text" name="search" class="search-input" id="search"
@@ -187,7 +189,7 @@
 
                         <div class="card-content">
 
-                            <h3 class="headline-medium">
+                            <h3 class="headline-small">
                                 Apple
                             </h3>
 
@@ -205,7 +207,7 @@
 
                         <div class="card-content">
 
-                            <h3 class="headline-medium">
+                            <h3 class="headline-small">
                                 Xiaomi
                             </h3>
 
@@ -223,7 +225,7 @@
 
                         <div class="card-content">
 
-                            <h3 class="headline-medium">
+                            <h3 class="headline-small">
                                 FitBit
                             </h3>
 
@@ -437,7 +439,6 @@
             <section class="section testimonials">
                 <div class="container">
 
-
                     <div class="section-header">
                         <p class="label-small accent">
                             Here are our some of the best clients.
@@ -453,7 +454,7 @@
                             <div class="testimonial swiper-slide">
                                 <img src="./imgs/avatar-1.png" alt="" class="avatar img-cover">
                                 <div class="card-content">
-                                    <h3 class="headline-medium">Hamza Faizi</h3>
+                                    <h3 class="headline-small">Hamza Faizi</h3>
                                     <p class="secondary-text">
                                         Don’t waste time, just order! This is the best website to puschase smart
                                         watches.
@@ -473,9 +474,49 @@
                             <div class="testimonial swiper-slide">
                                 <img src="./imgs/avatar-2.png" alt="" class="avatar img-cover">
                                 <div class="card-content">
-                                    <h3 class="headline-medium">Hafiz Huzaifa</h3>
+                                    <h3 class="headline-small">Hafiz Huzaifa</h3>
                                     <p class="secondary-text">
-                                        I’ve been purchasing smart watches of Mohid for a long time. All the
+                                        I’ve been purchasing smart watches of Ali-store. All the
+                                        products
+                                        are
+                                        good quality.
+                                    </p>
+                                    <div class="rating">
+                                        <span class="material-symbols-rounded">star</span>
+                                        <span class="material-symbols-rounded">star</span>
+                                        <span class="material-symbols-rounded">star</span>
+                                        <span class="material-symbols-rounded">star</span>
+                                        <span class="material-symbols-rounded">star</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial swiper-slide">
+                                <img src="./imgs/avatar-1.png" alt="" class="avatar img-cover">
+                                <div class="card-content">
+                                    <h3 class="headline-small">Hamza Faizi</h3>
+                                    <p class="secondary-text">
+                                        Don’t waste time, just order! This is the best website to puschase smart
+                                        watches.
+                                    </p>
+                                    <div class="rating">
+                                        <span class="material-symbols-rounded">star</span>
+                                        <span class="material-symbols-rounded">star</span>
+                                        <span class="material-symbols-rounded">star</span>
+                                        <span class="material-symbols-rounded">star</span>
+                                        <span class="material-symbols-rounded">star</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="testimonial swiper-slide">
+                                <img src="./imgs/avatar-2.png" alt="" class="avatar img-cover">
+                                <div class="card-content">
+                                    <h3 class="headline-small">Hafiz Huzaifa</h3>
+                                    <p class="secondary-text">
+                                        I’ve been purchasing smart watches of Ali-store. All the
                                         products
                                         are
                                         good quality.
@@ -497,7 +538,6 @@
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                     </div>
-
 
                 </div>
             </section>
@@ -561,12 +601,12 @@
         */
 
         var swiper = new Swiper('.mySwiper', {
-            slidesPerView: 1,
+
             loop: true,
-            centeredSlides: true,
-            spaceBetween: 40,
+            spaceBetween: 120,
             grabCursor: true,
-            watchSlidesProgress: true,
+            slidesPerView: 1,
+            centeredSlides: true,
             pagination: {
                 el: '.swiper-pagination',
             },
@@ -574,9 +614,13 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-            effect: 'fade',
-            fadeEffect: {
-                crossFade: 'true'
+
+            breakpoints: {
+                1440: {
+                    slidesPerView: 2,
+                    spaceBetween: 35,
+                    centeredSlides: false,
+                }
             }
         });
     </script>
